@@ -1,6 +1,7 @@
 const express=require('express');
 const app=express();
 const {PORT}=require('./config/serverConfig');
+const {FLIGHT_SERVICE_PATH}=require('./config/serverConfig');
 const apiRoutes=require('./routers/index');
 const db=require('./models/index');
 const bodyParser=require('body-parser');
